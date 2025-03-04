@@ -1,0 +1,201 @@
+:root {
+    --clr-purple-100: hsl(254,88%,90%);
+    --clr-purple-500: hsl(256, 67%, 59%);
+
+    --clr-yellow-100: hsl(31, 66%, 93%);
+    --clr-yellow-500: hsl(39, 100%, 71%);
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 7%);
+
+    --fw-normal: 400;
+    --fw-semibold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(280px, 350px);
+    grid-gap: 1rem 0;
+    max-width: 350px;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+/* First Child */
+main .card:nth-child(1) {
+    background-color: var(--clr-purple-500);
+    color: var(--clr-white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+main .card:nth-child(1) h2 {
+    font-size: 2.5rem;
+    font-weight: var(--fw-semibold);
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+main .card:nth-child(1) span {
+    color: var(--clr-yellow-500);
+}
+
+main .card:nth-child(1) img {
+    display: inline-block;
+    width: 70%; 
+}
+
+/* Second Child */
+main .card:nth-child(2) {
+    padding: 1rem;
+}
+
+main .card:nth-child(2) h2 {
+    font-weight: var(--fw-semibold);
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-style: bold;
+}
+
+main .card:nth-child(2) img{
+    margin-bottom: .75rem;
+}
+
+/* Third Child */
+main .card:nth-child(3) {
+    background-color: var(--clr-yellow-500);
+    padding: 1rem;
+    position: relative;
+}
+
+main .card:nth-child(3) h2 {
+    font-weight: var(--fw-semibold);
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-style: bold;
+}
+main .card:nth-child(3) img{
+    position: relative;
+    width: 60%;
+    bottom: -1.3rem;
+}
+
+/* Fourth Child */
+main .card:nth-child(4) {
+    background-color: var(--clr-purple-100);
+    padding: 1rem;
+    text-align: center;
+}
+
+main .card:nth-child(4) h2 {
+    font-weight: var(--fw-semibold);
+    font-size: 1.25rem;
+}
+main .card:nth-child(4) img{
+    width: 100%;
+    margin: 1rem 0 .75rem;
+}
+
+main .card:nth-child(4) p{
+    font-weight: 500;
+}
+
+/* Fifth Child */
+main .card:nth-child(5) {
+    color: var(--clr-white);
+    background-color: var(--clr-purple-500);
+    padding: 1rem;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+main .card:nth-child(5) h2 {
+    font-weight: var(--fw-normal);
+    font-size: 1.75rem;
+    line-height: 1.5rem;
+}
+main .card:nth-child(5) img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Sixth Child */
+main .card:nth-child(6) {
+    background-color: var(--clr-white);
+    padding: 1rem;
+}
+
+main .card:nth-child(6) h2 {
+    font-weight: var(--fw-semibold);
+    font-size: 2.5rem;
+}
+
+main .card:nth-child(6) p{
+    font-size: 1rem;
+    font-weight: var(--fw-normal);
+}
+
+main .card:nth-child(6) img{
+    width: 60%;
+    margin-top: 1rem;
+}
+
+/* Seventh Child */
+main .card:nth-child(7) {
+    background-color: var(--clr-yellow-100);
+    padding: 1rem;
+}
+
+main .card:nth-child(7) h2 {
+    font-weight: var(--fw-semibold);
+    font-size: 1.5rem;
+}
+
+main .card:nth-child(7) span {
+    color: var(--clr-purple-500);
+}
+
+main .card:nth-child(7) img{
+    width: 60%;
+    margin-top: 1rem;
+}
+
+/* Eigth Child */
+main .card:nth-child(8) {
+    background-color: var(--clr-yellow-500);
+    padding: 1rem;
+}
+
+main .card:nth-child(8) h2 {
+    font-weight: var(--fw-semibold);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+main .card:nth-child(8) img{
+    width: 80%;
+    margin-top: 1rem;
+}
+
