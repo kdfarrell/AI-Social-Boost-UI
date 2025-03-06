@@ -443,6 +443,7 @@ main .card:nth-child(8) img{
     main .card:nth-child(8) {
         padding: 1.5rem;
         grid-area: box6;
+        flex-direction: column;
     }
 
     main .card:nth-child(8) h2 {
